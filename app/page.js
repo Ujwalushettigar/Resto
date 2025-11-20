@@ -30,12 +30,20 @@ export default function Home() {
         >
           Blog
         </button>
-                <button
+        <button
           className="bg-black text-white h-12 w-48 rounded-full mt-20 ml-[600px] text-2xl font-bold"
           type="button"
           onClick={() => router.push("./shop")}
         >
           Shop
+        </button>
+
+        <button
+          className="bg-black text-white h-12 w-48 rounded-full mt-20 ml-[600px] text-2xl font-bold"
+          type="button"
+          onClick={() => router.push("./menu")}
+        >
+          Menu
         </button>
       </div>
     </div>

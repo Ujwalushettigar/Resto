@@ -1,4 +1,8 @@
+"use client";
+import React from "react";
+import { useRouter } from "next/navigation";
 export default function Header() {
+  const router=useRouter();
     return(
           <div className="flex flex-col w-full h-[550px] bg-black">
           <div className="flex flex-row w-full h-[40px] bg-[#b67a41]">
@@ -39,12 +43,12 @@ export default function Header() {
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"
             />
             <div className="ml-80 mt-17 font-[15px] font-bold">Home</div>
-            <select className="ml-10 mt-10 border-none font-[15px] font-bold">
-              <option>Pages</option>
-              <option>Login</option>
-              <option>Register</option>
+            <select onChange={(e)=>{router.push(e.target.value)}} className="ml-10 mt-10 border-none font-[15px] font-bold">
+              <option value="option1">Pages</option>
+              <option value="/login">Login</option>
+              <option value="/register">Register</option>
             </select>
-            <div className="ml-10 mt-17 font-[15px] font-bold">Menu</div>
+            <button className="ml-10 mt-10 font-[15px] font-bold">Menu</button>
             <div className="ml-10 mt-17 font-[15px] font-bold">Blog</div>
             <div className="ml-10 mt-17 font-[15px] font-bold">Shop</div>
             <img
