@@ -9,7 +9,7 @@ export default function Navbar() {
               <div className="ml-2 mt-2.5">Phone:+4733378901</div>
               <div className="ml-50 mt-2.5">Email:food@restan.com</div>
               <img
-                className="h-[23px] w-[23px] ml-120 mt-2.5 rounded-full"
+                className="h-[23px] w-[23px] ml-140 mt-2.5 rounded-full"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fflag.png&w=128&q=75"
               />
               <div className="ml-2 mt-2.5">English</div>
