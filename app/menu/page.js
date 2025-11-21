@@ -3,7 +3,7 @@ import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
-
+import MenuPage from "../components/menu";
 export default function Menu() {
   return (
     <div>
@@ -16,14 +16,8 @@ export default function Menu() {
         <div className="absolute mt-88 ml-150 text-white ">
           Home <span>&rsaquo;</span> Menu
         </div>
-        <div className="flex flex-col h-[1570px] w-full bg-gray-200 items-center">
-           <div className="flex flex-row rounded-full h-16 w-[650px] bg-white mt-30">
-            <button className="rounded-l-full bg-[#b68b3a] text-white">MAIN DISHES</button>
-            <button className="rounded-l-full text-black bg-white">DESERTS</button>
-            <button className="rounded-l-full text-black bg-white">SEA FOOD</button>
-            <button className="rounded-l-full text-black bg-white">BEVERAGE</button>
-           </div>
-        </div>
+        
+        <MenuPage />
         <Footer />
       </div>
     </div>

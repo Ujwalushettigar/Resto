@@ -12,10 +12,10 @@ export default function Header() {
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"
             />
             <select onChange={(e)=>{router.push(e.target.value)}} className="ml-70 mt-10 font-[15px] font-bold text-white">
-              <option value="/">Home</option>
-              <option value="/">Home 1</option>
-              <option value="/">Home 2</option>
-              <option value="/">Home 3</option>
+              <option value="/" className="border-none bg-white text-black">Home</option>
+              <option value="/" className="border-none bg-white text-black">Home 1</option>
+              <option value="/" className="border-none bg-white text-black">Home 2</option>
+              <option value="/" className="border-none bg-white text-black">Home 3</option>
             </select>
             <select onChange={(e)=>{router.push(e.target.value)}} className="ml-10 mt-10 border-none font-[15px] font-bold text-white">
               <option value="option1" className="border-none bg-white text-black">Pages</option>
@@ -30,14 +30,14 @@ export default function Header() {
               <option className="border-none bg-white text-black">Menu 3</option>
             </select>
             <select onChange={(e)=>{router.push(e.target.value)}} className="ml-10 mt-10 font-[15px] font-bold text-white">
-              <option value="/blog">Blog</option>
-              <option value="/blog">Blog 1</option>
-              <option value="/blog">Blog 2</option>
+              <option value="/blog" className="border-none bg-white text-black">Blog</option>
+              <option value="/blog" className="border-none bg-white text-black">Blog 1</option>
+              <option value="/blog" className="border-none bg-white text-black">Blog 2</option>
               
             </select>
             <select onChange={(e)=>{router.push(e.target.value)}} className="ml-10 mt-10 font-[15px] font-bold text-white">
-              <option value="/shop">Shop</option>
-              <option value="/shop">Shop 1</option>
+              <option value="/shop" className="border-none bg-white text-black">Shop</option>
+              <option value="/shop" className="border-none bg-white text-black">Shop 1</option>
             </select>
             <img
               className="h-[55px] w-[55px] ml-50 mt-17 rounded-full"

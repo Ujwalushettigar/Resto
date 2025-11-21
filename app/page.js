@@ -8,6 +8,7 @@ import Header from "./components/header";
 import Blogpage from "./components/blog";
 import Video from "./components/video";
 import About from "./components/about";
+import Chef from "./components/chef";
 // import Register from './register';
 
 export default function Home() {
@@ -17,11 +18,11 @@ export default function Home() {
       <div className="flex flex-col h-[7700px] w-full bg-white dark:bg-gray-800">
         <Navbar />
         <Header />
-        
         <About />
-        <div className="flex flex-col h-[3000px] w-full bg-white dark:bg-gray-800">
+        <div className="flex flex-col h-[2000px] w-full bg-white dark:bg-gray-800">
           
         </div>
+        <Chef />
         <Video />
         <Blogpage />
         <Footer />
