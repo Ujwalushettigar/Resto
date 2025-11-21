@@ -2,14 +2,19 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 import { useRouter } from "next/navigation";
 export default function Login() {
   const router = useRouter();
   return (
     <div>
       <div className="flex flex-col h-[2000px] w-full bg-white dark:bg-gray-800">
+      <Navbar />
       <Header />
-      <div className="absolute top-75 left-160 text-white font-bold text-5xl">Login Page</div>
+      <div className="absolute top-60 ml-140 text-white font-bold text-5xl">Login Page</div>
+      <div className="absolute mt-75 ml-160 text-white ">
+          Home <span>&rsaquo;</span> login
+        </div>
       
         <div>
           <div className="flex flex-row w-[1200px] h-[600px] bg-white  shadow-2xl rounded-2xl mt-20  ml-[150px] dark:bg-gray-700">

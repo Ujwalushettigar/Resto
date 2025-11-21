@@ -2,49 +2,28 @@
 // import Login from './login';
 import { useRouter } from "next/navigation";
 import React from "react";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import Blogpage from "./components/blog";
+import Video from "./components/video";
+import About from "./components/about";
 // import Register from './register';
 
 export default function Home() {
   const router = useRouter();
   return (
     <div>
-      <div className="w-full h-[1000px]">
-        <button
-          className="bg-black text-white h-12 w-48 rounded-full mt-20 ml-[600px] text-2xl font-bold"
-          type="button"
-          onClick={() => router.push("./login")}
-        >
-          Login
-        </button>
-        <button
-          className="bg-black text-white h-12 w-48 rounded-full mt-20 ml-[600px] text-2xl font-bold"
-          type="button"
-          onClick={() => router.push("./register")}
-        >
-          Register
-        </button>
-        <button
-          className="bg-black text-white h-12 w-48 rounded-full mt-20 ml-[600px] text-2xl font-bold"
-          type="button"
-          onClick={() => router.push("./blog")}
-        >
-          Blog
-        </button>
-        <button
-          className="bg-black text-white h-12 w-48 rounded-full mt-20 ml-[600px] text-2xl font-bold"
-          type="button"
-          onClick={() => router.push("./shop")}
-        >
-          Shop
-        </button>
-
-        <button
-          className="bg-black text-white h-12 w-48 rounded-full mt-20 ml-[600px] text-2xl font-bold"
-          type="button"
-          onClick={() => router.push("./menu")}
-        >
-          Menu
-        </button>
+      <div className="flex flex-col h-[7700px] w-full bg-white dark:bg-gray-800">
+        <Navbar />
+        <Header />
+        <div className="flex flex-col h-[3900px] w-full bg-white dark:bg-gray-800">
+          
+        </div>
+        <About />
+        <Video />
+        <Blogpage />
+        <Footer />
       </div>
     </div>
   );

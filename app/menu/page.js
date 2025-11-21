@@ -2,11 +2,13 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 
 export default function Menu() {
   return (
     <div>
       <div className="flex flex-col h-[2942px] w-full bg-white">
+        <Navbar />
         <Header />
         <div className="absolute mt-75 ml-140 text-white font-bold font-playfair text-5xl">
           Restaurent Best Food

@@ -2,16 +2,17 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-
+import Navbar from "../components/navbar";
 export default function Shop() {
   return (
     <div>
       <div className="flex flex-col h-[2942px] w-full bg-white">
+        <Navbar />
         <Header />
-        <div className="absolute mt-75 ml-140 text-white font-bold font-playfair text-5xl">
+        <div className="absolute mt-60 ml-158 text-white font-bold font-playfair text-5xl">
           Shop
         </div>
-        <div className="absolute mt-88 ml-150 text-white ">
+        <div className="absolute mt-75 ml-160 text-white ">
           Home <span>&rsaquo;</span> Shop
         </div>
         <div className="flex flex-col h-[1570px] w-full bg-gray-200 items-center  ">
