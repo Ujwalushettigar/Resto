@@ -18,15 +18,16 @@ export default function Header() {
               <option value="/">Home 3</option>
             </select>
             <select onChange={(e)=>{router.push(e.target.value)}} className="ml-10 mt-10 border-none font-[15px] font-bold text-white">
-              <option value="option1" className="border-none">Pages</option>
-              <option value="/login">Login</option>
-              <option value="/register">Register</option>
+              <option value="option1" className="border-none bg-white text-black">Pages</option>
+              <option value="/login" className="border-none bg-white text-black">Login</option>
+              <option value="/register" className="border-none bg-white text-black">Register</option>
+              <option value="/about" className="border-none bg-white text-black">About Us</option>
             </select>
             <select onChange={(e)=>{router.push(e.target.value)}} className="ml-10 mt-10 font-[15px] font-bold text-white">
-              <option value="/menu">Menu</option>
-              <option value="/menu">Menu 1</option>
-              <option>Menu 2</option>
-              <option>Menu 3</option>
+              <option value="/menu" className="border-none bg-white text-black">Menu</option>
+              <option value="/menu" className="border-none bg-white text-black">Menu 1</option>
+              <option className="border-none bg-white text-black">Menu 2</option>
+              <option className="border-none bg-white text-black">Menu 3</option>
             </select>
             <select onChange={(e)=>{router.push(e.target.value)}} className="ml-10 mt-10 font-[15px] font-bold text-white">
               <option value="/blog">Blog</option>

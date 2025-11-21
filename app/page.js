@@ -17,10 +17,11 @@ export default function Home() {
       <div className="flex flex-col h-[7700px] w-full bg-white dark:bg-gray-800">
         <Navbar />
         <Header />
-        <div className="flex flex-col h-[3900px] w-full bg-white dark:bg-gray-800">
+        
+        <About />
+        <div className="flex flex-col h-[3000px] w-full bg-white dark:bg-gray-800">
           
         </div>
-        <About />
         <Video />
         <Blogpage />
         <Footer />
