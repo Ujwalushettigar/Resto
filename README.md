@@ -2,12 +2,12 @@
 https://resto-one-delta.vercel.app/
 
 # Contributors / Team Members
-Ujwal U Shettigar
+# Ujwal U Shettigar
 
 Built Home, components, menu pages
 and also managed routing and responsive behaviour
 
-Prajwal T Kulal
+# Prajwal T Kulal
 
 Built login, register, shop, blog pages
 and also worked on dark theme
