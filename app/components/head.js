@@ -1,17 +1,30 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 export default function Header() {
   const router=useRouter();
+  const [ selectedOption , setSelectedOption ] = useState ( false ) ;
     return(
           <div className="flex flex-col w-full h-[744px] bg-black">
           
-          <div className="flex flex-row">
+          <div className="flex md:flex-row flex-col relative">
+             <button
+          type="button"
+          className="flex md:hidden flex-col gap-1 ml-10 md:ml-4 mt-15 md:mt-0"
+          onClick={() => setSelectedOption(!selectedOption)}
+        >
+          <span className="h-0.5 w-6 bg-white"></span>
+          <span className="h-0.5 w-6 bg-white"></span>
+          <span className="h-0.5 w-6 bg-white"></span>
+        </button>
             <img
-              className="h-[70px] w-[130px] ml-20 mt-10"
+              className="h-[70px] w-[130px] ml-25 md:ml-20 mt-[-30px] md:mt-10"
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"
             />
-            <select onChange={(e)=>{router.push(e.target.value)}} className="ml-70 mt-10 font-[15px] font-bold text-white">
+           
+          <div className={`flex-col md:flex-row ${selectedOption ? "flex" : "hidden"} md:flex md:ml-0`}>
+            <select onChange={(e)=>{router.push(e.target.value)}} className="ml-10 md:ml-70 mt-10 font-[15px] font-bold text-white">
               <option value="/" className="border-none bg-white text-black">Home</option>
               <option value="/" className="border-none bg-white text-black">Home 1</option>
               <option value="/" className="border-none bg-white text-black">Home 2</option>
@@ -39,11 +52,12 @@ export default function Header() {
               <option value="/shop" className="border-none bg-white text-black">Shop</option>
               <option value="/shop" className="border-none bg-white text-black">Shop 1</option>
             </select>
+            </div>
             <img
-              className="h-[55px] w-[55px] ml-50 mt-17 rounded-full"
+              className="h-[55px] w-[55px] ml-50 mt-17 rounded-full md:block hidden"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZhtcweV7RsoTQjXLNmQVP5rE1LA64-IXj3g&s"
             />
-            <button className="border-2 bg-black mt-17 p-3 ml-7 w-40 hover:bg-white hover:text-black text-white">
+            <button className="border-2 md:block hidden bg-black mt-17 p-3 ml-7 w-40 hover:bg-white hover:text-black text-white">
               Reservation
             </button>
           </div>

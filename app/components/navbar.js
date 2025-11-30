@@ -1,11 +1,11 @@
 export default function Navbar() {
     return (
-    <div className="flex flex-row w-full h-[40px] bg-[#b67a41]">
-            <div className="flex flex-row">
-              <img
+    <div className="flex flex-col hidden md:flex-row md:block w-full h-[40px] bg-[#b67a41]">
+            <div className="flex flex-col md:flex-row">
+              <div><img
                 className="h-[23px] w-[23px] ml-25 mt-2.5"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=64&q=75"
-              />
+              /></div>
               <div className="ml-2 mt-2.5">Phone:+4733378901</div>
               <div className="ml-50 mt-2.5">Email:food@restan.com</div>
               <img

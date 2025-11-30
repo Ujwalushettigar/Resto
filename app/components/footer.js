@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="flex flex-row gap-3 mt-4">
               <div className="bg-gray-400 w-8 h-8">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvz6CaJ2FlG_VbRz7VdPIyvN77mpgGc_h8NQ&s"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbQa_YZBOm5gy0DZnVez-5J3G3AFwdZ46Vcw&s"
                   className="w-7 h-7 justify-self-center mt-0.5"
                 ></img>
               </div>

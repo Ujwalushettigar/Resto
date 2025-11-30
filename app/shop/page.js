@@ -6,16 +6,16 @@ import Navbar from "../components/navbar";
 export default function Shop() {
   return (
     <div>
-      <div className="flex flex-col h-[2942px] w-full bg-white">
+      <div className="flex flex-col w-full  h-[2600px] md:h-[2942px] md:w-full bg-white">
         <Navbar />
         <Header />
-        <div className="absolute mt-60 ml-158 text-white font-bold font-playfair text-5xl">
+        <div className="absolute mt-40 ml-20 md:mt-60 md:ml-158 text-white font-bold font-playfair text-5xl">
           Shop
         </div>
-        <div className="absolute mt-75 ml-160 text-white ">
+        <div className="absolute mt-53 ml-23 md:mt-75 md:ml-160 text-white ">
           Home <span>&rsaquo;</span> Shop
         </div>
-        <div className="flex flex-col h-[1570px] w-full bg-gray-200 items-center  ">
+        <div className="flex flex-col h-[4300px] md:h-[1570px] w-full bg-gray-200 items-center  ">
           <div className="flex flex-row mt-20 h-50 w-[1300px] items-center ">
             <button className="h-15 w-15 border-gray-300 rounded-xl bg-[#b68b3a] text-black ml-3 hover:text-white hover:bg-[#b68b3a]"></button>
             <button className="h-15 w-15 border-gray-300 rounded-xl bg-gray-100 text-black ml-3 hover:text-white hover:bg-[#b68b3a]"></button>
@@ -29,15 +29,15 @@ export default function Shop() {
               <option>Sort by Relevant</option>
             </select>
           </div>
-          <div className="flex flex-row w-[1300px] h-[500px] items-center">
+          <div className="flex flex-col h-100% md:flex-row w-[1300px] md:h-[500px] items-center">
             <div className="flex flex-col w-[320px] h-[470px] bg-white rounded-2xl m-2 items-center">
-                <img
+              <img
                 className="h-1/2 w-[250px] mt-10"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75"
               ></img>
               <div className="text-gray-700">CHEESE,PIZZA</div>
               <div className="font-fairplay font-bold text-2xl text-black mt-1">
-               Margherita Pizza
+                Margherita Pizza
               </div>
               <div className="text-[#b68b3a] text-2xl font-bold mt-2">
                 $12.00
@@ -51,13 +51,13 @@ export default function Shop() {
               </button>
             </div>
             <div className="flex flex-col w-[320px] h-[470px] bg-white rounded-2xl m-2 items-center">
-                <img
+              <img
                 className="h-1/2 w-[250px] mt-10"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F2.png&w=1080&q=75"
               ></img>
               <div className="text-gray-700">CREAMY,BURGER</div>
               <div className="font-fairplay font-bold text-2xl text-black mt-1">
-               Chiken Burger
+                Chiken Burger
               </div>
               <div className="text-[#b68b3a] text-2xl font-bold mt-2">
                 $8.00
@@ -71,13 +71,13 @@ export default function Shop() {
               </button>
             </div>
             <div className="flex flex-col w-[320px] h-[470px] bg-white rounded-2xl m-2 items-center">
-                 <img
+              <img
                 className="h-1/2 w-[250px] mt-10"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F3.png&w=1080&q=75"
               ></img>
               <div className="text-gray-700">BEEF,STEAK</div>
               <div className="font-fairplay font-bold text-2xl text-black mt-1">
-               Grilled Flank Steak
+                Grilled Flank Steak
               </div>
               <div className="text-[#b68b3a] text-2xl font-bold mt-2">
                 $14.00
@@ -91,13 +91,13 @@ export default function Shop() {
               </button>
             </div>
             <div className="flex flex-col w-[320px] h-[470px] bg-white rounded-2xl m-2 items-center">
-                <img
+              <img
                 className="h-1/2 w-[250px] mt-10"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F5.png&w=1080&q=75"
               ></img>
               <div className="text-gray-700">BBQ,MEAT</div>
               <div className="font-fairplay font-bold text-2xl text-black mt-1">
-               Barbecue Chicken
+                Barbecue Chicken
               </div>
               <div className="text-[#b68b3a] text-2xl font-bold mt-2">
                 $8.00
@@ -111,7 +111,7 @@ export default function Shop() {
               </button>
             </div>
           </div>
-          <div className="flex flex-row w-[1300px] h-[500px] items-center">
+          <div className="flex flex-col md:flex-row w-[1300px] h-[500px] items-center">
             <div className="flex flex-col w-[320px] h-[470px] bg-white rounded-2xl m-2 items-center">
               <img
                 className="h-1/2 w-[250px] mt-10"
@@ -133,7 +133,7 @@ export default function Shop() {
               </button>
             </div>
             <div className="flex flex-col w-[320px] h-[470px] bg-white rounded-2xl m-2 items-center">
-                <img
+              <img
                 className="h-1/2 w-[250px] mt-10"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F6.png&w=1080&q=75"
               ></img>
@@ -153,7 +153,7 @@ export default function Shop() {
               </button>
             </div>
             <div className="flex flex-col w-[320px] h-[470px] bg-white rounded-2xl m-2 items-center">
-                <img
+              <img
                 className="h-1/2 w-[250px] mt-10"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F7.png&w=1080&q=75"
               ></img>
@@ -173,7 +173,7 @@ export default function Shop() {
               </button>
             </div>
             <div className="flex flex-col w-[320px] h-[470px] bg-white rounded-2xl m-2 items-center">
-                <img
+              <img
                 className="h-1/2 w-[250px] mt-10"
                 src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F4.png&w=1080&q=75"
               ></img>
@@ -193,15 +193,28 @@ export default function Shop() {
               </button>
             </div>
           </div>
-          <div className="flex flex-row h-[100px] w-[1000px] items-center justify-center mt-20">
-            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 font-bold text-black  hover:text-white hover:bg-[#b68b3a]">&lt;&lt;</button>
-            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 font-bold text-black ml-3 hover:text-white hover:bg-[#b68b3a]">1</button>
-            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 text-black font-bold ml-3 hover:text-white hover:bg-[#b68b3a]">2</button>
-            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 text-black ml-3 font-bold hover:text-white hover:bg-[#b68b3a]">3</button>
-            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 text-black ml-3 font-bold hover:text-white hover:bg-[#b68b3a]">&gt;&gt;</button>
+          <div className="flex flex-row mt-[1470px] h-[100px] w-[1000px] items-center justify-center md:mt-20">
+            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 font-bold text-black  hover:text-white hover:bg-[#b68b3a]">
+              &lt;&lt;
+            </button>
+            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 font-bold text-black ml-3 hover:text-white hover:bg-[#b68b3a]">
+              1
+            </button>
+            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 text-black font-bold ml-3 hover:text-white hover:bg-[#b68b3a]">
+              2
+            </button>
+            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 text-black ml-3 font-bold hover:text-white hover:bg-[#b68b3a]">
+              3
+            </button>
+            <button className="h-15 w-15 border-[1px] rounded-full bg-gray-100 text-black ml-3 font-bold hover:text-white hover:bg-[#b68b3a]">
+              &gt;&gt;
+            </button>
           </div>
         </div>
-        <Footer />
+        <div className="mt-1 md:mt-0"></div>
+        <div className="relative mt-[400px] md:mt-0">
+          <Footer />
+        </div>
       </div>
     </div>
   );
