@@ -1,4 +1,4 @@
-# Vercel Link
+# Vercel Deployment Link
 https://resto-one-delta.vercel.app/
 
 # Contributors / Team Members
